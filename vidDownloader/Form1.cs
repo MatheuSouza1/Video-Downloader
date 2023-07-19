@@ -32,15 +32,12 @@ namespace vidDownloader
             {
                 if (folderDialog.ShowDialog() == DialogResult.OK)
                     txtBoxPath.Text = folderDialog.SelectedPath + "\\";
-                else
-                    txtBoxPath.Text = Environment.GetFolderPath(Environment.SpecialFolder.MyDocuments);
             }
         }
 
         private string GetDefaultPath()
         {
-            var home = Environment.GetFolderPath(
-                Environment.SpecialFolder.UserProfile);
+            var home = Environment.GetFolderPath(Environment.SpecialFolder.UserProfile);
 
             return Path.Combine(home, "Downloads");
         }

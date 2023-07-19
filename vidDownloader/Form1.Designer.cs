@@ -36,6 +36,7 @@
             this.pageSetupDialog1 = new System.Windows.Forms.PageSetupDialog();
             this.progressBar = new System.Windows.Forms.ProgressBar();
             this.btnBrowse = new System.Windows.Forms.Button();
+            this.lblStatus = new System.Windows.Forms.Label();
             this.SuspendLayout();
             // 
             // lblPath
@@ -89,9 +90,9 @@
             // 
             // progressBar
             // 
-            this.progressBar.Location = new System.Drawing.Point(12, 152);
+            this.progressBar.Location = new System.Drawing.Point(200, 90);
             this.progressBar.Name = "progressBar";
-            this.progressBar.Size = new System.Drawing.Size(621, 35);
+            this.progressBar.Size = new System.Drawing.Size(433, 24);
             this.progressBar.TabIndex = 5;
             // 
             // btnBrowse
@@ -106,12 +107,21 @@
             this.btnBrowse.UseVisualStyleBackColor = true;
             this.btnBrowse.Click += new System.EventHandler(this.btnBrowse_Click);
             // 
+            // lblStatus
+            // 
+            this.lblStatus.AutoSize = true;
+            this.lblStatus.Location = new System.Drawing.Point(200, 126);
+            this.lblStatus.Name = "lblStatus";
+            this.lblStatus.Size = new System.Drawing.Size(0, 20);
+            this.lblStatus.TabIndex = 7;
+            // 
             // Form1
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(9F, 20F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(37)))), ((int)(((byte)(35)))), ((int)(((byte)(35)))));
             this.ClientSize = new System.Drawing.Size(645, 197);
+            this.Controls.Add(this.lblStatus);
             this.Controls.Add(this.btnBrowse);
             this.Controls.Add(this.progressBar);
             this.Controls.Add(this.btnDownload);
@@ -138,6 +148,7 @@
         private System.Windows.Forms.PageSetupDialog pageSetupDialog1;
         private System.Windows.Forms.ProgressBar progressBar;
         private System.Windows.Forms.Button btnBrowse;
+        private System.Windows.Forms.Label lblStatus;
     }
 }
 
